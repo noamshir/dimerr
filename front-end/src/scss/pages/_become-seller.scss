@@ -1,0 +1,149 @@
+.become-seller {
+  font-family: work-sans;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+  }
+
+  .in-become-seller-nav{
+    scroll-margin-top: 100px;
+  }
+
+  .field {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+    min-width: 300px;
+  }
+
+  .field-select {
+    padding: 15px;
+    border-radius: 10px;
+    outline: none;
+  }
+
+  .hero {
+    position: relative;
+    margin-bottom: 30px;
+    overflow-x: hidden;
+    .container {
+      text-align: center;
+      color: white;
+      display: flex;
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      width: 100%;
+      transform: translate(-50%, -50%);
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+    .btn {
+      line-height: 16px;
+      font-weight: 700;
+      color: #fff;
+      border: 1px solid transparent;
+      padding: 15px 35px;
+    }
+    h2 {
+      font-size: 34px;
+      text-shadow: 0 0 6px #00000075;
+
+      @include for-narrow-layout {
+        font-size: 50px;
+      }
+    }
+    p {
+      font-size: 24px;
+      font-weight: 500;
+    }
+  }
+  .become-seller-hero {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .seller-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2 {
+      font-size: 35px;
+    }
+    .title {
+      color: #95979d;
+      max-width: 60ch;
+    }
+  }
+
+  .file-image {
+    font-size: 28px;
+    color: #8c939d;
+    width: 178px;
+    height: 178px;
+    line-height: 178px;
+    border: dotted 2px rgb(88, 88, 88);
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+
+    img {
+      height: 100%;
+      width: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    &:hover {
+      border: dotted 2px $clr1;
+      color: $clr1;
+    }
+  }
+
+  .file-input {
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  .desc {
+    height: 100px;
+    padding: 5px 15px;
+    color: #606266;
+    background-color: #fff;
+    outline: none;
+    resize: none;
+    border: 1px solid #dcdfe6;
+    border-radius: 4px;
+    transition: 0.3s;
+    font-family: work-sans;
+
+    &:focus {
+      border: 1px solid $clr1;
+    }
+  }
+
+  button {
+    min-width: 200px;
+    margin-bottom: 64px;
+  }
+
+  .select-wrapper,
+  .description,
+  .desc {
+    width: 100%;
+  }
+}

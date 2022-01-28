@@ -1,0 +1,225 @@
+.gig-preview {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #e4e5e7;
+  &:hover {
+    .gig-title {
+      color: $clr1;
+    }
+  }
+  .rate-wrapper {
+    padding: 8px 12px;
+    padding-bottom: 10px;
+  }
+  h5 {
+    margin: 0;
+  }
+
+  .gig-rating {
+    display: flex;
+    align-items: center;
+    height: 15px;
+    color: #ffbe5b;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .review-number {
+    color: #b5b6ba;
+    font-weight: 400;
+    margin-inline-start: 2px;
+  }
+  .star {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    vertical-align: -0.16em;
+  }
+
+  .owner-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 0 8px 12px;
+    .owner-level-name {
+      display: flex;
+      flex-direction: column;
+      .owner-name {
+        color: #222325;
+        font-weight: 600;
+        font-family: work-sans, sans-serif, serif;
+      }
+      .owner-level {
+        font-family: work-sans, sans-serif, serif;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.5;
+      }
+    }
+    .owner-pic {
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
+    }
+  }
+  .gig-img {
+    width: 100%;
+    cursor: pointer;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .gig-title {
+    margin: 0;
+    font-size: 18px;
+    font-family: work-sans;
+    text-align: left;
+    color: #222325;
+    padding: 8px 20px 8px 12px;
+    cursor: pointer;
+    transition: 0.3s all;
+    height: 3.2em;
+    overflow: hidden;
+  }
+
+  .price-like-container {
+    border-top: 1px solid #efeff0;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    font-family: work-sans-regular;
+    .like {
+      color: lighten($clr3, 20%);
+      transition: color 0.3s;
+
+      &.active {
+        color: rgba(218, 95, 95, 0.829);
+      }
+    }
+
+    .like:hover {
+      cursor: pointer;
+      color: rgba(218, 95, 95, 0.829);
+    }
+    .like svg {
+      height: 20px;
+    }
+    ul {
+      cursor: pointer;
+    }
+
+    & ul li:first-child {
+      text-transform: uppercase;
+      color: #7a7d85;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      padding: 2px 0;
+    }
+    & ul li:not(:first-child) {
+      margin-top: 2px;
+      font-size: 18px;
+      line-height: 20px;
+      color: $clr2;
+      text-align: right;
+    }
+  }
+
+  .carousel-btn-container {
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    margin-bottom: 5px;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    button {
+      border-radius: 50%;
+      height: 7px;
+      width: 7px;
+      padding: 0 2px;
+      border: none;
+      background-color: rgb(241, 238, 238);
+      transition: transform 0.3s;
+    }
+    button.active {
+      transform: scale(1.5);
+    }
+  }
+
+  .indicators {
+    display: block;
+    top: 50%;
+    & > :first-child {
+      position: absolute;
+      left: -26px;
+    }
+    & > :last-child {
+      position: absolute;
+      right: -26px;
+    }
+    justify-content: space-between;
+    transform: translateX(-50%);
+    // opacity: 0;
+    span {
+      transform: translateY(-50%);
+      transition: 0.4s all;
+    }
+
+    &.show {
+      // opacity: 1;
+      & > :first-child {
+        left: 0;
+      }
+      & > :last-child {
+        right: 0;
+      }
+    }
+  }
+  .indicators > span {
+    background-color: white;
+    color: $clr3;
+    border: 1px solid darken($clr4, 15%);
+
+    svg {
+      font-size: 14px;
+      position: relative;
+    }
+    &:first-child {
+      padding: 5px 5px 5px 5px;
+      border-end-end-radius: 50%;
+      border-top-right-radius: 50%;
+    }
+    &:first-child svg {
+      top: 2px;
+      bottom: 2px;
+      right: 3px;
+    }
+    &:last-child {
+      padding: 5px 5px 5px 5px;
+      border-top-left-radius: 50%;
+      border-bottom-left-radius: 50%;
+    }
+    &:last-child svg {
+      inset: 2px 3px;
+    }
+  }
+
+  .carousel-item {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 197px;
+    background-size: cover;
+    color: #fff;
+  }
+}

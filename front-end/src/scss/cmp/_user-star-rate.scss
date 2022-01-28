@@ -1,0 +1,16 @@
+.stars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .rate-num {
+        font-size: 14px;
+        padding-inline-start: 3px;
+    }
+}
+.star {
+    font-size: 4px;
+    color: #ffb33e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,142 @@
+/* Media queries Breakpoint mixins */
+
+@mixin for-normal-max-layout {
+  @media (max-width: $header-break-normal) {
+    @content;
+  }
+}
+
+@mixin for-narrow-layout {
+  @media (min-width: $padded-break-narrow) {
+    @content;
+  }
+}
+
+@mixin for-normal-layout {
+  @media (min-width: $padded-break-normal) {
+    @content;
+  }
+}
+
+@mixin for-wide-layout {
+  @media (min-width: $header-break-wide) {
+    @content;
+  }
+}
+
+@mixin for-extra-wide-layout {
+  @media (min-width: $header-break-extra-wide) {
+    @content;
+  }
+}
+
+//carousel layout mixins
+
+@mixin for-normal-carousel-layout {
+  @media (min-width: $carousel-break-normal) {
+    @content;
+  }
+}
+
+@mixin for-wide-carousel-layout {
+  @media (min-width: $carousel-break-wide) {
+    @content;
+  }
+}
+
+//header layout mixins
+
+@mixin for-normal-header-layout {
+  @media (min-width: $header-break-normal) {
+    @content;
+  }
+}
+
+@mixin for-wide-header-layout {
+  @media (min-width: $header-break-wide) {
+    @content;
+  }
+}
+
+@mixin for-extra-wide-header-layout {
+  @media (min-width: $header-break-extra-wide) {
+    @content;
+  }
+}
+
+@mixin for-large-screen-header-layout {
+  @media (min-width: $header-break-extra-wide) {
+    @content;
+  }
+}
+
+// REVIEW MIXINS
+
+@mixin for-review-narrow-layout {
+  @media (min-width: $review-break-narrow) {
+    @content;
+  }
+}
+
+//Order mixins
+
+@mixin for-order-normal-layout {
+  @media (min-width: $order-break-normal) {
+    @content;
+  }
+}
+@mixin for-order-wide-layout {
+  @media (min-width: $order-break-wide) {
+    @content;
+  }
+}
+
+@mixin layoutWidth() {
+  width: 100%;
+  margin: auto;
+}
+
+@mixin layoutMaxWidth() {
+  max-width: 1400px;
+  margin: auto;
+}
+
+@mixin layoutGTC($max) {
+  grid-template-columns:
+    minmax($layoutPadding, 1fr)
+    minmax(auto, $max)
+    minmax($layoutPadding, 1fr);
+}
+
+/* Media  Mixins */
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+  overflow: hidden;
+  &::before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+  }
+  > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  > img {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+// Mixin for removing hover efects on iphone screen
+@mixin hover-supported {
+  @media not all and (pointer: coarse) {
+    &:hover {
+      @content;
+    }
+  }
+}

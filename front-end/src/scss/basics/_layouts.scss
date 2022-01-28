@@ -1,0 +1,40 @@
+.max-width-container {
+  @include for-narrow-layout {
+    @include layoutWidth();
+  }
+  @include for-normal-header-layout {
+    @include layoutWidth();
+    .display-from-size-medium {
+      display: inline-block;
+    }
+  }
+  @include for-wide-header-layout {
+    @include layoutWidth();
+    .display-from-size-large {
+      display: inline-block;
+    }
+  }
+  @include for-extra-wide-header-layout {
+    @include layoutWidth();
+    .display-from-size-large {
+      display: inline-block;
+    }
+  }
+  @include for-large-screen-header-layout {
+    @include layoutMaxWidth();
+  }
+}
+
+// Main Header Layout
+
+// .card-grid {
+//     display: grid;
+//     grid-auto-flow: dense;
+//     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+//     gap: 20px;
+//     // grid-auto-rows: 300px;
+
+//     > * {
+//         @include aspect-ratio(1, 1);
+//     }
+// }

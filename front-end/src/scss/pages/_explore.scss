@@ -1,0 +1,382 @@
+.explore {
+  .close-modal {
+    background-color: inherit;
+    border: 0;
+    font-size: 2rem;
+    margin: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transform: translate(-50%, 50%);
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 9999;
+  }
+  .services-count {
+    font-family: roboto-bold;
+    font-size: 0.9rem;
+    color: $clr3;
+  }
+  .category-headline {
+    text-transform: capitalize;
+  }
+
+  .main-screen {
+    opacity: 0;
+    pointer-events: none;
+    &.open {
+      pointer-events: all;
+      opacity: 1;
+      z-index: 50;
+      background-color: #fff;
+    }
+  }
+  h1 {
+    font-family: roboto-bold;
+    font-size: 1.8rem;
+    color: $clr2;
+    margin-top: 30px;
+    @media (max-width: 450px) {
+      margin: 0;
+      margin-top: 10px;
+      text-align: center;
+    }
+  }
+  .open {
+    @media (max-width: 450px) {
+      .filters {
+        flex-direction: column-reverse;
+        gap: 20px;
+        .action-btns {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          .clear-btn {
+            font-size: 1.3rem;
+            color: $clr2;
+          }
+          .applay-filters {
+            display: inline-block;
+            font-size: 1rem;
+          }
+        }
+      }
+      .filters-div {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        .budget-div {
+          width: 100%;
+          .budget-select {
+            width: 100%;
+            justify-content: space-between;
+          }
+          .budget-content {
+            padding: 0;
+            .budget-filter {
+              padding: 5px;
+              input {
+                padding: 0;
+                width: 40px;
+              }
+            }
+          }
+        }
+        .delivery {
+          width: 100%;
+          li {
+            z-index: 9999;
+          }
+        }
+      }
+    }
+  }
+  .inner-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: work-sans;
+    @media (max-width: 450px) {
+      flex-direction: column-reverse;
+    }
+    .sort-by,
+    span {
+      font-size: 16px;
+      line-height: 120%;
+      font-family: work-sans;
+      display: inline-block;
+      white-space: nowrap;
+      &.sort-label {
+        padding: 0 7px;
+      }
+    }
+    span {
+      font-weight: 400;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-height: 150px;
+    }
+    .select-wrapper {
+      fieldset {
+        outline: none;
+        border: none;
+      }
+      .sort-form {
+        padding: 0;
+        margin: 0;
+      }
+      .sort-by-select {
+        padding: 0;
+        margin: 0;
+      }
+    }
+    em,
+    div {
+      font-weight: 700;
+    }
+  }
+  .select-wrapper {
+    em {
+      font-family: work-sans;
+      font-style: normal;
+      color: #222325;
+    }
+    .sort-form {
+      div {
+        font-family: work-sans;
+        svg {
+          right: -5px;
+          transition: 0.3s all;
+        }
+      }
+    }
+  }
+  .responsive-btns {
+    display: none;
+    gap: 5px;
+    background-color: #fff;
+    @media (max-width: 450px) {
+      display: flex;
+      position: sticky;
+      top: 0;
+      left: 0;
+      z-index: 10;
+      min-height: 40px;
+      padding: 10px 0;
+      margin-top: 10px;
+    }
+    .btn-filter-modal {
+      flex-grow: 1;
+      border: 0;
+      background-color: inherit;
+      display: flex;
+      padding: 10px 15px;
+      border: 1px solid $clr1;
+      border-radius: 4px;
+      color: $clr2;
+      font-size: rem(18px);
+      display: flex;
+      align-items: center;
+      gap: 3px;
+      justify-content: center;
+    }
+  }
+
+  .filter-container {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 11;
+    background-color: #fff;
+    display: flex;
+    padding: 10px 0;
+    @media (max-width: 450px) {
+      display: none;
+      &.open {
+        position: fixed;
+        padding: 0;
+        margin-left: 10px;
+        top: 20%;
+        left: 50%;
+        width: 80%;
+        margin: auto;
+        transform: translate(-50%, -50%);
+        display: flex;
+        z-index: 51;
+      }
+    }
+    em,
+    div {
+      font-weight: 500;
+      svg {
+        transition: 0.3s all;
+      }
+    }
+    .select-wrapper {
+      display: flex;
+      align-items: center;
+    }
+    span {
+      font-size: 16px;
+      line-height: 120%;
+      font-family: work-sans;
+      display: inline-block;
+    }
+  }
+  .MuiFormControl-root {
+    width: 100%;
+  }
+  .filters-div {
+    align-items: flex-end;
+    @media (max-width: 450px) {
+      justify-content: space-between;
+    }
+    .budget-div {
+      position: relative;
+      margin: 0 6px;
+      .budget-select {
+        cursor: pointer;
+        line-height: 1.4375em;
+        height: 35px;
+        border-radius: 4px;
+        color: #222325;
+        font-family: work-sans;
+        font-style: normal;
+        border: 1px solid $clr6;
+        padding: 8px 10px;
+        width: 120px;
+        display: flex;
+        align-items: center;
+        &:hover {
+          border: 1px solid #222325;
+        }
+        transition: border-color 0.12s cubic-bezier(0.22, 0.61, 0.36, 1);
+        span {
+          &.arrow {
+            color: gray;
+            transform: rotate(0deg);
+            transition: all 0.24s cubic-bezier(0.215, 0.61, 0.355, 1);
+            &.open {
+              transform: rotate(180deg);
+            }
+          }
+        }
+      }
+      .budget-content {
+        position: absolute;
+        z-index: 100;
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.24s cubic-bezier(0.215, 0.61, 0.355, 1), opacity 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+        &.open {
+          opacity: 1;
+          pointer-events: all;
+        }
+        border: 1px solid $clr6;
+        line-height: 22px;
+        font-size: 14px;
+        top: 100%;
+        margin-top: 10px;
+        border-radius: 4px;
+        background-color: #fff;
+        color: $clr5;
+        box-shadow: 0 12px 18px 0.2;
+        .budget-filter {
+          padding: 12px 24px;
+          transition: all 0.24s cubic-bezier(0.215, 0.61, 0.355, 1);
+        }
+        .price-filter {
+          gap: 10px;
+          .input-wrapper {
+            margin-bottom: 12px;
+            label {
+              margin-bottom: 4px;
+              font-size: 1rem;
+              line-height: 24px;
+              color: $clr5;
+              font-weight: 600;
+            }
+            input {
+              height: 40px;
+              width: 120px;
+              border: 1px solid #c5c6c9;
+              color: $clr2;
+              padding: 8px 12px;
+              &:focus {
+                outline: none;
+              }
+            }
+          }
+        }
+        .budget-btns {
+          padding: 16px 24px;
+          justify-content: space-between;
+          .close-btn {
+            border: 0;
+            color: #95979d;
+            font-size: 1rem;
+            background: inherit;
+          }
+          .btn {
+            height: 30px;
+            display: flex;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  @media (max-width: 450px) {
+    flex-direction: column;
+    gap: 10px;
+  }
+  button {
+    &.clear-btn {
+      padding: 0;
+      white-space: nowrap;
+      display: flex;
+      justify-content: flex-end;
+      background-color: inherit;
+      border: 0;
+      color: #222325;
+      font-size: 1rem;
+      font-weight: 700;
+      font-family: Arial, Helvetica, sans-serif;
+      display: flex;
+      align-items: center;
+    }
+    &.applay-filters {
+      display: none;
+    }
+  }
+}
+.no-gigs-modal {
+  display: flex;
+  height: 80vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: work-sans;
+  color: $clr2;
+  h2 {
+    text-align: center;
+  }
+  .img-container {
+    height: 55vh;
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

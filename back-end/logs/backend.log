@@ -1,0 +1,73 @@
+23.1.2022, 12:08:18 - ERROR - cannot find users | {}
+23.1.2022, 12:08:18 - ERROR - Failed to get users | {}
+23.1.2022, 12:09:14 - ERROR - cannot find users | {}
+23.1.2022, 12:09:14 - ERROR - Failed to get users | {}
+23.1.2022, 12:12:04 - ERROR - cannot find users | {}
+23.1.2022, 12:12:04 - ERROR - Failed to get users | {}
+23.1.2022, 12:12:34 - ERROR - cannot find users | {}
+23.1.2022, 12:12:34 - ERROR - Failed to get users | {}
+23.1.2022, 12:12:44 - ERROR - cannot find users | {}
+23.1.2022, 12:12:44 - ERROR - Failed to get users | {}
+23.1.2022, 12:12:45 - ERROR - cannot find users | {}
+23.1.2022, 12:12:45 - ERROR - Failed to get users | {}
+23.1.2022, 12:17:59 - ERROR - cannot find users | {}
+23.1.2022, 12:17:59 - ERROR - Failed to get users | {}
+23.1.2022, 12:18:00 - ERROR - cannot find users | {}
+23.1.2022, 12:18:00 - ERROR - Failed to get users | {}
+23.1.2022, 12:18:40 - ERROR - cannot find users | {}
+23.1.2022, 12:18:41 - ERROR - Failed to get users | {}
+23.1.2022, 12:18:41 - ERROR - cannot find users | {}
+23.1.2022, 12:18:41 - ERROR - Failed to get users | {}
+23.1.2022, 13:27:05 - ERROR - cannot insert user | {}
+23.1.2022, 13:27:48 - ERROR - cannot insert user | {}
+23.1.2022, 13:28:20 - ERROR - cannot insert user | {}
+23.1.2022, 13:36:16 - ERROR - while finding user noam | {"reason":{"type":"ReplicaSetNoPrimary","servers":{},"stale":false,"compatible":true,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"setName":"atlas-14bqu2-shard-0","maxSetVersion":6,"maxElectionId":"7fffffff0000000000000057","commonWireVersion":9}}
+23.1.2022, 13:38:32 - ERROR - while finding user noam | {}
+23.1.2022, 16:16:10 - ERROR - cannot update user 61ed10c9539e75815ff210fd | {"index":0,"code":66}
+23.1.2022, 16:16:10 - ERROR - Failed to update user | {"index":0,"code":66}
+23/01/2022, 20:11:32 - ERROR - cannot update gig 61ed302b01d6a59611f2c498 | {"index":0,"code":66}
+24/01/2022, 16:32:49 - ERROR - erorr while finding gigs | {"operationTime":{"$timestamp":"7056780586161012737"},"ok":0,"code":2,"codeName":"BadValue","$clusterTime":{"clusterTime":{"$timestamp":"7056780586161012737"},"signature":{"hash":"e9EeuqRQ7077p++Cbpjuw6hT364=","keyId":{"low":2,"high":1632169518,"unsigned":false}}}}
+24/01/2022, 16:37:15 - ERROR - erorr while finding gigs | {"operationTime":{"$timestamp":"7056781741507215362"},"ok":0,"code":2,"codeName":"BadValue","$clusterTime":{"clusterTime":{"$timestamp":"7056781741507215362"},"signature":{"hash":"TDRSb2JnyheFMZfm6TTnJQySDXU=","keyId":{"low":2,"high":1632169518,"unsigned":false}}}}
+24/01/2022, 16:38:14 - ERROR - erorr while finding gigs | {"operationTime":{"$timestamp":"7056781982025383938"},"ok":0,"code":2,"codeName":"BadValue","$clusterTime":{"clusterTime":{"$timestamp":"7056781982025383938"},"signature":{"hash":"PlTmOSbgg2Nj3XUB0qmxqKNa80w=","keyId":{"low":2,"high":1632169518,"unsigned":false}}}}
+24/01/2022, 16:39:24 - ERROR - erorr while finding gigs | {"operationTime":{"$timestamp":"7056782282673094657"},"ok":0,"code":2,"codeName":"BadValue","$clusterTime":{"clusterTime":{"$timestamp":"7056782282673094657"},"signature":{"hash":"yy+ubQy8qKRPB+cE1HlYwu2jzLc=","keyId":{"low":2,"high":1632169518,"unsigned":false}}}}
+24.1.2022, 14:58:36 - DEBUG - Setting (gZVuoudyKgWdBw0CAAAB) socket.userId = 61ed3be34a3939f6b80a119b
+24.1.2022, 15:01:51 - DEBUG - Setting (Wmuzap0lLgOAdYDyAAAD) socket.userId = 61ed3be34a3939f6b80a119b
+24/01/2022, 21:02:00 - ERROR - erorr while finding gigs | {}
+25.1.2022, 11:54:48 - ERROR - erorr while finding orders | {}
+25.1.2022, 11:56:37 - ERROR - erorr while finding orders | {}
+25.1.2022, 11:56:37 - ERROR - Failed to get orders | {}
+25.1.2022, 11:57:12 - ERROR - erorr while finding orders | {}
+25.1.2022, 11:57:12 - ERROR - Failed to get orders | {}
+25.1.2022, 11:57:36 - ERROR - erorr while finding orders | {}
+25.1.2022, 11:57:36 - ERROR - Failed to get orders | {}
+25.1.2022, 11:57:55 - ERROR - erorr while finding orders | {}
+25.1.2022, 11:57:55 - ERROR - Failed to get orders | {}
+25.1.2022, 11:58:18 - ERROR - erorr while finding orders | {}
+25.1.2022, 11:58:18 - ERROR - Failed to get orders | {}
+25.1.2022, 11:58:38 - ERROR - erorr while finding orders | {}
+25.1.2022, 11:58:38 - ERROR - Failed to get orders | {}
+25.1.2022, 11:58:44 - ERROR - erorr while finding orders | {}
+25.1.2022, 11:58:44 - ERROR - Failed to get orders | {}
+25.1.2022, 11:58:49 - ERROR - erorr while finding orders | {}
+25.1.2022, 11:58:49 - ERROR - Failed to get orders | {}
+25.1.2022, 12:17:11 - ERROR - Failed to get orders | {}
+25.1.2022, 12:17:48 - ERROR - Failed to get orders | {}
+25.1.2022, 12:18:03 - ERROR - Failed to get orders | {}
+25.1.2022, 12:19:10 - ERROR - Failed to get orders | {}
+25.1.2022, 12:20:11 - ERROR - Failed to get orders | {}
+25.1.2022, 12:20:30 - ERROR - Failed to get orders | {}
+25.1.2022, 20:00:18 - ERROR - erorr while finding gigs | {"operationTime":{"$timestamp":"7057205152268156933"},"ok":0,"code":2,"codeName":"BadValue","$clusterTime":{"clusterTime":{"$timestamp":"7057205152268156933"},"signature":{"hash":"iXbGlzpQA6vtrRk5La6oIDSdHPM=","keyId":{"low":2,"high":1632169518,"unsigned":false}}}}
+25.1.2022, 20:00:48 - ERROR - erorr while finding gigs | {"operationTime":{"$timestamp":"7057205281117175811"},"ok":0,"code":2,"codeName":"BadValue","$clusterTime":{"clusterTime":{"$timestamp":"7057205281117175811"},"signature":{"hash":"nsiqwsNJh+m9RYRO7+X6oVIoPRU=","keyId":{"low":2,"high":1632169518,"unsigned":false}}}}
+25.1.2022, 20:00:48 - ERROR - Failed to get gigs | {"operationTime":{"$timestamp":"7057205281117175811"},"ok":0,"code":2,"codeName":"BadValue","$clusterTime":{"clusterTime":{"$timestamp":"7057205281117175811"},"signature":{"hash":"nsiqwsNJh+m9RYRO7+X6oVIoPRU=","keyId":{"low":2,"high":1632169518,"unsigned":false}}}}
+25.1.2022, 20:01:27 - ERROR - erorr while finding gigs | {"operationTime":{"$timestamp":"7057205444325933057"},"ok":0,"code":2,"codeName":"BadValue","$clusterTime":{"clusterTime":{"$timestamp":"7057205444325933057"},"signature":{"hash":"g/kM6hNJkCuLqYdpWktn7F4yTCc=","keyId":{"low":2,"high":1632169518,"unsigned":false}}}}
+25.1.2022, 20:01:27 - ERROR - Failed to get gigs | {"operationTime":{"$timestamp":"7057205444325933057"},"ok":0,"code":2,"codeName":"BadValue","$clusterTime":{"clusterTime":{"$timestamp":"7057205444325933057"},"signature":{"hash":"g/kM6hNJkCuLqYdpWktn7F4yTCc=","keyId":{"low":2,"high":1632169518,"unsigned":false}}}}
+26/01/2022, 18:20:02 - ERROR - Failed to get google user | {}
+26/01/2022, 18:20:15 - ERROR - Failed to get google user | {}
+26.1.2022, 18:40:35 - ERROR - Failed to get google user | {}
+27.1.2022, 9:03:33 - ERROR - Failed to get google user | {}
+27/01/2022, 17:54:50 - ERROR - Failed to get google user | {}
+27.1.2022, 17:42:36 - ERROR - Failed to get google user | {}
+27.1.2022, 17:47:26 - ERROR - Failed to get google user | {}
+27.1.2022, 17:48:52 - ERROR - Failed to get google user | {}
+27.1.2022, 17:50:07 - ERROR - Failed to get google user | {}
+27.1.2022, 17:51:34 - ERROR - Failed to get google user | {}

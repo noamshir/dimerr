@@ -1,0 +1,32 @@
+form {
+    display: flex;
+    position: relative;
+    .search-bar {
+        border: none;
+        border-radius: 4px 0 0 4px;
+        font-size: 1rem;
+        padding: 8px 7px 7px 44px;
+        flex-grow: 21;
+    }
+    .search-bar:focus {
+        outline: none;
+    }
+    .search-icon {
+        display: flex;
+        // justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 22px;
+        height: 22px;
+        // margin-top: auto;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0.4em;
+        color: $clr2;
+    }
+}
+form .search-btn {
+    border-radius: 0 4px 4px 0;
+    flex-grow: 2;
+    font-weight: 600;
+}

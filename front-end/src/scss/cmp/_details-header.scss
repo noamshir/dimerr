@@ -1,0 +1,26 @@
+.details-header {
+  position: relative;
+  z-index: 10;
+  h1 {
+    color: $clr2;
+    padding-bottom: 16px;
+    @media (max-width: 400px) {
+      font-size: 1.4rem;
+    }
+  }
+  .owner-info {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 7px;
+    font-size: 16px;
+    margin-bottom: 16px;
+    .spacer {
+      color: #c5c6c9;
+    }
+    .user-img {
+      height: 40px;
+      width: 40px;
+    }
+  }
+}

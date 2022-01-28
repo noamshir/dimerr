@@ -1,0 +1,207 @@
+.main-header {
+  form .search-bar {
+    padding: 8px 7px 7px 32px;
+  }
+  &.sticky {
+    position: fixed;
+    width: 100%;
+    z-index: 9;
+  }
+  &.not-sticky {
+    width: 100%;
+    z-index: 9;
+  }
+  .dimerr-header {
+    width: 100%;
+    background-color: #fff;
+    transition: background-color 0.5s ease;
+    &.header-transparent {
+      @include for-normal-header-layout {
+        background-color: transparent;
+        border-bottom: none;
+      }
+    }
+  }
+}
+
+.logged-out-homepage-header {
+  .header-row-wrapper {
+    width: 100%;
+    flex-wrap: nowrap;
+    .header-row {
+      align-items: center;
+      @include for-normal-max-layout {
+        justify-content: space-between;
+      }
+      &.row-main {
+        height: 80px;
+        align-content: center;
+        flex-wrap: nowrap;
+      }
+      .btn-nav {
+        &.home-header-color {
+          @include for-normal-header-layout {
+            color: #fff;
+          }
+        }
+        @include for-wide-header-layout {
+          display: none;
+        }
+        cursor: pointer;
+        background-color: inherit;
+        border: 0;
+        display: flex;
+        align-items: center;
+        .menu-icon {
+          width: 50px;
+          height: 30px;
+          margin-left: -20px;
+        }
+      }
+    }
+
+    nav li {
+      white-space: nowrap;
+    }
+  }
+}
+
+.dimerr-nav {
+  justify-self: flex-end;
+  display: flex;
+  color: #7a7d85;
+  font-size: 1.1rem;
+  @include for-normal-header-layout {
+    &.home-header-color {
+      color: #fff;
+    }
+    flex-grow: 1;
+    .nav-helper {
+      flex-grow: 1;
+    }
+  }
+
+  ul {
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    -webkit-box-align: center;
+    & li:last-child {
+      padding: 0;
+    }
+    li {
+      padding: 0 10px;
+      margin: 0;
+      list-style: none;
+      list-style-image: none;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 24px;
+      a {
+        transition: color 0.2s;
+        font-weight: 400;
+        &:hover {
+          color: $clr1;
+        }
+        &.home-header-color {
+          &:hover {
+            color: #fff;
+          }
+        }
+      }
+      button {
+        font-size: 1.1rem;
+        transition: color 0.2s;
+        font-weight: 400;
+        cursor: pointer;
+        background-color: inherit;
+        border: 0;
+        display: flex;
+        align-items: center;
+        color: #7a7d85;
+        line-height: 24px;
+        &:hover {
+          color: $clr1;
+        }
+        @include for-normal-header-layout {
+          &.home-header-color {
+            color: #fff;
+          }
+        }
+      }
+      .join-a {
+        @include for-normal-header-layout {
+          color: $clr1;
+          border: 1px solid $clr1;
+          padding: 10px 16px;
+          transition: all 0.2s ease;
+          border-radius: 4px;
+          &:hover {
+            background-color: $clr1;
+            border: 1px solid transparent;
+            color: #fff;
+          }
+        }
+        &.home-header-color {
+          &:hover {
+            color: #95979d;
+          }
+          @include for-normal-header-layout {
+            border: 1px solid #fff;
+            padding: 7px 20px;
+            transition: all 0.2s ease;
+            border-radius: 4px;
+            color: #fff;
+            &:hover {
+              background-color: $clr1;
+              border: 1px solid transparent;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.dimerr-header-search-animated {
+  display: none;
+  transition: visibility 0s, opacity 0.5s linear;
+
+  .display-for-header {
+    display: none !important;
+  }
+  @include for-normal-header-layout {
+    display: block;
+    visibility: hidden;
+  }
+  &.show-bar {
+    display: none;
+    .display-for-header {
+      display: none !important;
+    }
+    @include for-normal-header-layout {
+      display: block;
+      visibility: visible;
+      padding-left: 15px;
+      input {
+        border: 1px solid #dadbda;
+      }
+    }
+    @include for-wide-header-layout {
+      padding-left: 20px;
+    }
+    @include for-extra-wide-header-layout {
+      .display-for-header {
+        display: block !important;
+      }
+    }
+  }
+}
+
+.display-from-size-medium {
+  display: none;
+}
+
+.display-from-size-large {
+  display: none;
+}

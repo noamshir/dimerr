@@ -1,0 +1,40 @@
+.user-img {
+  position: relative;
+  border-radius: 50%;
+  background-size: cover;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $clr1;
+  span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-transform: capitalize;
+  }
+  .connection-dot {
+    width: 30%;
+    height: 30%;
+    border-radius: 50%;
+    background-color: $clr1;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    border: 2px solid white;
+
+    &.dot-bottom {
+      top: auto;
+      bottom: 1%;
+      right: 1%;
+      border: 2px solid white;
+    }
+  }
+}
+
+.container-user-img {
+  position: relative;
+}

@@ -1,0 +1,53 @@
+.seller-stats-container {
+    background-color: #fff;
+    padding: rem(32px);
+    font-family: work-sans;
+    font-size: 0.8rem;
+    min-width: 300px;
+    .seller-stats {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr) 70px 40px;
+        & > * {
+            align-self: center;
+        }
+        .stats-category {
+            grid-column: 1/3;
+        }
+        .stats-precent,
+        .stats-bar-container {
+            justify-self: flex-end;
+        }
+        .stats-bar-container {
+            width: 100%;
+            height: 6px;
+            background-color: red;
+            background-color: $clr6;
+            border-radius: 2rem;
+            position: relative;
+        }
+        .stats-bar-container .stats-bar {
+            z-index: 5;
+            position: absolute;
+            left: 0;
+            height: 100%;
+            background-color: $clr1;
+            border-radius: 2rem;
+        }
+        border-bottom: 1px solid $clr6;
+        padding-bottom: 15px;
+    }
+    .seller-performance {
+        padding-top: 15px;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        .earned,
+        .response {
+            justify-self: flex-end;
+            font-weight: 600;
+        }
+        .response {
+            color: $clr1;
+        }
+    }
+    line-height: 2em;
+}

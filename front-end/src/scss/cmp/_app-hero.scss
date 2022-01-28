@@ -1,0 +1,203 @@
+.hero-container {
+    overflow-x: hidden;
+    margin-bottom: 10vh;
+    position: relative;
+    .background-images {
+        width: 50%;
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        .background {
+            padding: 0 $layoutPadding;
+            height: 100%;
+            display: flex;
+            justify-content: flex-end;
+            pointer-events: none;
+            opacity: 0;
+            transition: 1s;
+
+            &.active {
+                opacity: 1;
+            }
+        }
+        .background img {
+            display: none;
+            filter: drop-shadow(0rem 0rem 8rem rgba(255, 255, 255, 0.2));
+            @include for-wide-layout {
+                display: inline;
+                right: 0;
+                bottom: 0;
+                position: absolute;
+                height: 52vh;
+            }
+
+            @include for-extra-wide-layout {
+                left: 0;
+                height: 63vh;
+            }
+        }
+    }
+}
+.hero-content-container {
+    padding: 0 $layoutPadding;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: roboto-bold;
+    height: 40vh;
+    transition: 1s;
+
+    .hero-content {
+        width: 700px;
+    }
+    .hero-content h1 {
+        display: none;
+        width: 500px;
+        font-size: 5vh;
+        margin-block-start: rem(80px);
+        margin-block-end: rem(15px);
+
+        @include for-narrow-layout {
+            display: block;
+            font-size: 36px;
+        }
+        @include for-wide-layout {
+            font-size: 44px;
+        }
+    }
+
+    .hero-content {
+        margin-top: 100px;
+        width: 100%;
+        @include for-narrow-layout {
+            margin-top: 0;
+        }
+    }
+    .hero-content form {
+        flex-direction: column;
+        gap: 20px;
+        height: 110px;
+        max-width: 550px;
+        .search-bar,
+        .search-btn {
+            border-radius: 4px;
+        }
+
+        .search-icon {
+            top: 22%;
+        }
+
+        @include for-narrow-layout {
+            flex-direction: row;
+            height: 48px;
+            gap: 0;
+
+            .search-bar {
+                border-radius: 4px 0 0 4px;
+            }
+            .search-btn {
+                border-radius: 0 4px 4px 0;
+            }
+            .search-icon {
+                top: 50%;
+            }
+        }
+
+        @include for-wide-layout {
+            max-width: 650px;
+        }
+    }
+
+    .hero-content i {
+        font-weight: 400;
+        font-family: lobster;
+        margin-inline-start: em(5px);
+    }
+
+    @include for-wide-layout {
+        justify-content: space-between;
+        height: 65vh;
+
+        .hero-content {
+            width: 550px;
+        }
+        .hero-content h1 {
+            width: 600px;
+            margin-block: rem(40px);
+        }
+    }
+    @include for-extra-wide-layout {
+        height: 80vh;
+        .hero-content {
+            width: 680px;
+        }
+        .hero-content h1 {
+            font-size: rem(48px);
+        }
+    }
+    form {
+        margin-block-end: 20px;
+        height: 48px;
+        font-size: rem(32px);
+
+        svg {
+            position: absolute;
+            top: -0.1em;
+        }
+    }
+
+    .hero-popular-category {
+        display: none;
+        font-size: 1.2rem;
+        @include for-wide-layout {
+            display: flex;
+            gap: 10px;
+        }
+
+        .btn-popular-category {
+            padding: 4px 8px;
+            background-color: inherit;
+            border: 1px solid white;
+            border-radius: 2em;
+            color: white;
+            transition: 0.2s;
+            cursor: pointer;
+        }
+        .btn-popular-category:hover {
+            background-color: white;
+            color: $clr2;
+        }
+    }
+    .seller-name {
+        display: none;
+        color: white;
+        font-size: 1rem;
+        align-self: flex-end;
+        z-index: 5;
+        margin-block-end: em(20px);
+        @include for-wide-layout {
+            display: inline;
+            position: relative;
+        }
+
+        .seller {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 600;
+            position: absolute;
+            width: 12rem;
+            text-align: right;
+            right: 0;
+            bottom: 0px;
+            opacity: 0;
+            transition: 1s;
+
+            &.active {
+                opacity: 1;
+            }
+            .seller-skill {
+                font-weight: 400;
+            }
+        }
+    }
+}

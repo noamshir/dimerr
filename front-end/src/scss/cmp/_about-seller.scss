@@ -1,0 +1,70 @@
+.about-seller {
+  &-header {
+    color: $clr2;
+    padding-bottom: 25px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .seller-stats {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    border: 1px solid $clr6;
+    padding: 24px;
+    margin-bottom: 64px;
+
+    .seller-desc {
+      padding-top: 15px;
+      border-top: 1px solid $clr6;
+    }
+
+    .card {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      padding-bottom: 20px;
+      & > *:first-child {
+        color: $clr8;
+        font-weight: 500;
+        line-height: 1.6875em;
+      }
+    }
+  }
+
+  .seller-info {
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 130%;
+    padding-bottom: 24px;
+    position: relative;
+    .user-img {
+      height: 110px;
+      width: 110px;
+    }
+    .online-status {
+      position: absolute;
+      right: 0;
+      color: $clr3;
+      font-size: 0.9rem;
+      border-radius: 2rem;
+      border: 1px solid $clr3;
+      padding: 2px 5px;
+      font-family: Arial, Helvetica, sans-serif;
+      &::before {
+        content: "•";
+        margin-inline: 4px;
+      }
+    }
+    .online-status.online {
+      color: $clr1;
+      border: 1px solid $clr1;
+    }
+  }
+
+  .seller-name-level-rate {
+    margin-inline-start: 15px;
+  }
+}
